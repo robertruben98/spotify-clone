@@ -1,6 +1,7 @@
 FROM node:21.7.1 as base
 WORKDIR /app
 COPY package*.json ./
+COPY public ./
 RUN npm install
 COPY . .
 RUN npm run build
