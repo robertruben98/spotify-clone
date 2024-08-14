@@ -35,7 +35,7 @@ const isHover = () => {
       @mouseover="isHover"
       @mouseleave="isHover"
   >
-   <img :width="iconSize" :src="`/images/icons/${icon}.png`">
+   <img :width="iconSize" :src="`./images/icons/${icon}.png`" alt="klsjfldjfs">
     <div
         :class="textIsHover ? 'text-white' : 'text-gray-400'"
         class="font-semibold text-[14px] ml-4 mt-0.5"
